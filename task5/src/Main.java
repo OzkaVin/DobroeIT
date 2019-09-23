@@ -1,4 +1,5 @@
 //import java.util.LinkedList;
+//import UserTreeSet.java;
 
 
 public class Main {
@@ -46,7 +47,6 @@ public class Main {
         public Node getNext(){
             return this.next;
         }
-
         public Object getData(){
             return obj;
         }
@@ -137,14 +137,23 @@ public class Main {
     public static void main(String[] args) {
 
         // Task 2
-        UserLinkedList olhaList = new UserLinkedList();
+        /*UserLinkedList olhaList = new UserLinkedList();
         olhaList.add(5);
         olhaList.add(8);
         olhaList.add(10);
        //System.out.println(olhaList.contains(8));
         olhaList.remove(10);
-        olhaList.print();
+        olhaList.print();*/
 
+
+        // Task 5
+        UserTreeSet myTree;
+        myTree.add("Olha", 5);
+        myTree.add("Helen", 7);
+        myTree.add("Irina", 3);
+        myTree.add("Natalia", 15);
+
+        myTree.print();
 
         // Task 1
         /*int a[] = new int[] {2,6,8,10,20,45,90};
