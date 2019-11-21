@@ -1,6 +1,12 @@
-import org.junit.Assert;
-import org.junit.Test;
+package com.dobroeit.taskfive;
 
-public class XUserLinkedList {
+import static org.junit.Assert.*;
+import org.junit.*;
 
+public class UserLinkedListTest {
+
+    @Test
+    public void test(){
+        Assert.
+    }
 }

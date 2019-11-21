@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.Objects;
+
 public class Main {
 
     public static class Friend implements Comparable<Friend> {
@@ -22,14 +25,14 @@ public class Main {
 
     public static class ListNode {
 
-        private Comparable element;
+        private Object element;
         private ListNode next;
 
-        ListNode (Comparable o){
+        ListNode (Object o){
             element = o;
         }
 
-        ListNode (ListNode nextNode, Comparable o){
+        ListNode (ListNode nextNode, Object o){
             element = o;
             next = nextNode;
         }
@@ -38,7 +41,7 @@ public class Main {
             return this.next;
         }
 
-        public Comparable getData() {
+        public Object getData() {
             return element;
          }
     }
@@ -67,7 +70,7 @@ public class Main {
 
 
         // if both elements equals!!!
-        public void add(Comparable o) {
+        public void add(Object o) {
             // first element adding
             if(first == null)
                 first = new ListNode(o);
@@ -77,7 +80,9 @@ public class Main {
                 ListNode newNode = new ListNode (o);
 
                 //comparing first one
-                if (curr.getData() > o){
+                if ((curr.getData()).compareTo(o) > 1){
+
+
 
                     newNode.next = first;
                     first = newNode;
@@ -88,7 +93,7 @@ public class Main {
                 ListNode nextNode = curr.getNext();
 
                 while (nextNode != null) {
-                    if ((curr.getData() > o){
+                    if ((curr.getData()).compareTo(o) < 1){
 
                         curr.next = newNode;
                         newNode.next = nextNode;
@@ -171,5 +176,7 @@ public class Main {
         myTree.add("Natalia", 15);
 
         myTree.print();*/
+
+
     }
 }

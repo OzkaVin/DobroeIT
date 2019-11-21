@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17246a19-1edd-4e2e-be12-b96acbc007ef" name="Default Changelist" comment="" />
+    <list default="true" id="485b98bc-6db0-4cce-8c86-ca83f860f763" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,10 +9,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1QHFZaFNY5xKYbZrqZsOuXGe5a6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1Razfk2boUXUUuIJhR8sRhQaa3W" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junit-4.12.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -30,11 +35,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17246a19-1edd-4e2e-be12-b96acbc007ef" name="Default Changelist" comment="" />
-      <created>1567419670770</created>
+      <changelist id="485b98bc-6db0-4cce-8c86-ca83f860f763" name="Default Changelist" comment="" />
+      <created>1569920099097</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567419670770</updated>
+      <updated>1569920099097</updated>
     </task>
     <servers />
   </component>
