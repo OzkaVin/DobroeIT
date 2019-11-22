@@ -1,25 +1,24 @@
 package com.ozka.main;
 
-public class UserLinkedList {
-
-    private Node first;
-    private Node last;
+public class UserLinkedListT <T extends SGet> {
+    private T first;
+    private T last;
 
     private static int size;
 
-    public UserLinkedList(){
+    public UserLinkedListT(){
         size = 0;
     }
 
-    public boolean add(Object element){
+    public boolean add(T item){
 
         // first element adding
         if(first == null){
-            first = new Node(element);
+            first = item;
             last = first;
         }
         else {
-            Node newNode = new Node (element);
+            T newNode = item;
             last.setNext(newNode);
             last = last.getNext();
         }
@@ -35,19 +34,19 @@ public class UserLinkedList {
         return false;
     }
 
-    public boolean remove(Object element) {
+    public boolean remove(T item) {
         if (size > 0) {
-            Node curr = first;
+            T curr = first;
 
             //if the one we looked for is the first element
-            if (curr.getData() == element){
+            if (curr.getData() == item){
                 first = curr.getNext();
                 size--;
                 return true;
             }
 
             do {
-                if ((curr.getNext()).getData() == element){
+                if ((curr.getNext()).getData() == item){
 
                     curr.setNext((curr.getNext()).getNext());
                     size--;
@@ -59,25 +58,16 @@ public class UserLinkedList {
         return false;
     }
 
-    public boolean contains(Object element) {
+    public boolean contains(T item) {
         if (size > 0) {
-            Node curr = first;
+            T curr = first;
             do{
-                if (curr.getData() == element)
+                if (curr.getData() == item)
                     return true;
                 curr = curr.getNext();
             }while (curr != null);
         }
         return  false;
     }
-
-    void print(){
-        if(size > 0){
-            Node curr = first;
-            do {
-                System.out.println(curr.getData());
-                curr = curr.getNext();
-            } while (curr != null);
-        }
-    }
 }
+
