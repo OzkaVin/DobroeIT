@@ -38,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestUserLinkedList.addTwoObjectsToListThenDeleteOneAndCheckThatContainsShowTheOtehrOneExistsInList">
+  <component name="RunManager" selected="JUnit.TestUserLinkedList">
     <configuration name="TestUserLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junitlinkedlist_maven" />
       <extension name="coverage">
@@ -120,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestUserLinkedList.addTwoObjectsToListThenDeleteOneAndCheckThatContainsShowTheOtehrOneExistsInList" />
         <item itemvalue="JUnit.TestUserLinkedList" />
+        <item itemvalue="JUnit.TestUserLinkedList.addTwoObjectsToListThenDeleteOneAndCheckThatContainsShowTheOtehrOneExistsInList" />
         <item itemvalue="JUnit.TestUserLinkedList.addTwoObjectsToEmptyListThenDeleteOneAndCheckThatContainsShowTheOtehrOneExistsInList" />
         <item itemvalue="JUnit.TestUserLinkedList.addObjectToListAndCheckThatContainsShowsItExistsInList" />
         <item itemvalue="JUnit.TestUserLinkedList.addTwoObjectsToEmptyListAndCheckThatSizeIsTwo" />
