@@ -1,24 +1,24 @@
 package com.ozka.main;
 
-public class NodeT implements SGet {
+public class NodeT <T> /*implements SGet*/ {
 
-    private Object obj;
-    private Node next;
+    private T item;
+    private NodeT next;
 
-    T (Object x){
-        obj = x;
+    NodeT (T x){
+        item = x;
     }
 
-    void setNext(Node x){
+    void setNext(NodeT x){
         next = x;
     }
 
-    public T getNext(){
+    public NodeT getNext(){
         return next;
     }
 
-    public Object getData(){
-        return obj;
+    public T getData(){
+        return item;
     }
 }
 

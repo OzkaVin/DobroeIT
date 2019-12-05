@@ -55,7 +55,7 @@ public class TestUserLinkedList {
     //-------add, remove, contains and size testing---------
 
     @Test
-    public void addTwoObjectsToListThenDeleteOneAndCheckThatContainsShowTheOtehrOneExistsInList(){
+    public void addTwoObjectsToListThenDeleteOneAndCheckThatContainsShowTheOtherOneExistsInList(){
         addObjectsToList(OBJECT_A, OBJECT_B);
         list.remove(OBJECT_A);
         assertEquals(true, list.contains(OBJECT_B));

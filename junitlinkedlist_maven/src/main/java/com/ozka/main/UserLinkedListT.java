@@ -1,8 +1,8 @@
 package com.ozka.main;
 
-public class UserLinkedListT <T extends SGet> {
-    private T first;
-    private T last;
+public class UserLinkedListT <T> /*<T extends SGet>*/ {
+    private Node first;
+    private Node last;
 
     private static int size;
 
@@ -14,11 +14,11 @@ public class UserLinkedListT <T extends SGet> {
 
         // first element adding
         if(first == null){
-            first = item;
+            first = new Node(item);
             last = first;
         }
         else {
-            T newNode = item;
+            Node newNode = new Node (item);
             last.setNext(newNode);
             last = last.getNext();
         }
@@ -36,7 +36,7 @@ public class UserLinkedListT <T extends SGet> {
 
     public boolean remove(T item) {
         if (size > 0) {
-            T curr = first;
+            Node curr = first;
 
             //if the one we looked for is the first element
             if (curr.getData() == item){
@@ -60,7 +60,7 @@ public class UserLinkedListT <T extends SGet> {
 
     public boolean contains(T item) {
         if (size > 0) {
-            T curr = first;
+            Node curr = first;
             do{
                 if (curr.getData() == item)
                     return true;
