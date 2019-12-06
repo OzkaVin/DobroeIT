@@ -24,4 +24,8 @@ public class Animal {
     Type getType(){
         return animalType;
     }
+
+    public String toString(){
+        return String.format("%s - %d", this.name, this.age);
+    }
 }
