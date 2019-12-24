@@ -62,16 +62,43 @@ public class Seventh{
 }
 */
 
+/*
+
+// 7.3
 public class Seventh{
-    public static List <Animal> out (int [] array){
-        return inArr.stream().
-                filter(a -> ((a.getAge() <= 5) && (a.getName().startsWith("A") || a.getName().startsWith("B") || a.getName().startsWith("C")))).
-                sorted(Comparator.comparing(a -> a.getAge())).
-                limit(3).
+    static List<Animal> animals = new ArrayList <> ();
+
+    public static List <Animal> out (Integer [] arr){
+        List <Integer> arrList = Arrays.asList(arr);
+        return animals.stream().
+                filter(a ->
+                        (((((a.getAge() % 2) == 0) && (a.getType() == Type.Cat)) || (((a.getAge() % 2) != 0) && (a.getType() == Type.Dog))) && arrList.contains(a.getAge()) )).
                 collect(Collectors.toList());
     }
 
     public static void main(String[] args) {
 
+        Integer arr[] = {2, 5, 7, 4, 3};
+
+        animals.add(new Animal(Type.Bird, 3, "Chloe"));
+        animals.add(new Animal(Type.Cat, 4, "Murka"));
+        animals.add(new Animal(Type.Dog, 2, "Black"));
+        animals.add(new Animal(Type.Caw, 5, "Flower"));
+        animals.add(new Animal(Type.Dog, 7, "Fred"));
+        animals.add(new Animal(Type.Cat, 1, "Alex"));
+        animals.add(new Animal(Type.Bird, 6, "Archi"));
+        animals.add(new Animal(Type.Caw, 3, "Arina"));
+        animals.add(new Animal(Type.Dog, 8, "Bob"));
+
+        List <Animal> listAnimals = Seventh.out(arr);
+
+        listAnimals.stream().forEach(System.out::println);
+    }
+}
+*/
+
+public class Seventh{
+    public static void main(String[] args) {
+        new Thread(() -> System.out.println(Thread.currentThread().getName())).start();
     }
 }
